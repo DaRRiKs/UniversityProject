@@ -1,0 +1,43 @@
+{% extends 'university/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Our University!</h1>
+        <p class="lead">We provide high-quality education and research facilities.</p>
+        <hr class="my-4">
+        <p>Learn more about our programs and community.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">About Us</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Our Programs</h5>
+                    <p class="card-text">Explore our diverse programs that cater to your interests.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Campus Life</h5>
+                    <p class="card-text">Join our vibrant community and make lifelong memories.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Admissions</h5>
+                    <p class="card-text">Find out how to apply and join our university.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
